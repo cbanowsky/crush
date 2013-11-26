@@ -1,5 +1,4 @@
 {{!< default}}
-
 <head>
     {{! Document Settings }}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -23,29 +22,19 @@
 
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
-
-
-
-        {{! Each post has the blog logo at the top, with a link back to the home page }}
-<header class="site-head" style="background-image: url(/content/images/2013/Nov/jabbajava.jpg)">
+{{! Each post has 
+<header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
     <div class="vertical">
        <a href="{{@blog.url}}">
 	<div class="site-head-content">
-            <div class="blog-title">Java The Hut</div>
+            <h1 class="blog-title">{{@blog.title}}</h1>
         </div>
        </a>
     </div>
 </header>
 <div id="crazy">
-
  <h1 class="blog-decription">{{post.title}}</h1>
-
 </div>
-            </a>
-	  </div>
-	</div>
-   </header>
-
 <main class="content" role="main">
      <article class="{{post_class}}">	
         {{! Everything inside the #post tags pulls data from the post }}
@@ -74,9 +63,6 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-	</section>
-
         <footer class="post-footer">
 	  <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
             {{#if author}}
@@ -85,7 +71,7 @@
                     <p>{{author.bio}}</p>
                 </section>
             {{/if}}
-
+           </section>
             <section class="share">
                 <h4>Share this post</h4>
                 <a class="icon-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
