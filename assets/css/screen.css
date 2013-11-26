@@ -573,10 +573,10 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The author credit area after the post */
 .post-footer {
-    position: absolute;
+    position: relative;
     margin: 4rem 0 0 0;
     padding: 4rem 0 0 0;
-    border-top: #432 1px solid;
+    border-top: #EBF2F6 1px solid;
 }
 
 .post-footer h4 {
@@ -600,24 +600,23 @@ margin on the iframe, cause it breaks stuff. */
    to be flexible at smaller screen sizes while the share
    links remain at a fixed width the whole time */
 .post-footer .share {
-    position: relative;
-    top: rem;
+    position: absolute;
+    top: 4rem;
     right: 0;
     width: 140px;
 }
 
 .post-footer .share a {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     display: inline-block;
     margin: 1.4rem 1.6rem 1.6rem 0;
-    color: #333;
+    color: #BBC7CC;
     text-decoration: none;
 }
 
 .post-footer .share a:hover {
     color: #50585D;
 }
-
 
 /* ==========================================================================
    6. Third Party Elements - Embeds from other services
@@ -642,7 +641,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The main wrapper for our pagination links */
 .pagination {
-    position: block;
+    position: inline-block;
     width: 80%;
     max-width: 700px;
     margin: 4rem auto;
@@ -691,6 +690,7 @@ margin on the iframe, cause it breaks stuff. */
    8. Footer - The bottom of every page
    ========================================================================== */
 
+
 .site-footer {
     position: relative;
     margin: 8rem 0 0 0;
@@ -703,30 +703,6 @@ margin on the iframe, cause it breaks stuff. */
     text-align: center;
     background: #F7FAFB;
 }
-
-.site-footer a {
-    color: #BBC7CC;
-    text-decoration: underline;
-}
-
-.site-footer a:hover {
-    color: #50585D;
-}
-
-.poweredby .icon-ghost {
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.poweredby .icon-ghost:hover {
-    text-decoration: none;
-}
-
-.poweredby .icon-ghost:before {
-    font-size: 1rem;
-    margin-right: 0.2em;
-}
-
 /* The subscribe icon on the footer */
 .subscribe {
     width: 28px;
@@ -739,7 +715,7 @@ margin on the iframe, cause it breaks stuff. */
     text-align: center;
     line-height: 2.4rem;
     border-radius: 50px;
-    background: #fge;
+    background: #fff;
     transition: box-shadow 0.5s;
 }
 
@@ -802,6 +778,7 @@ margin on the iframe, cause it breaks stuff. */
     opacity: 1;
     top: -33px;
 }
+
 
 
 /* ==========================================================================
