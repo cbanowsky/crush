@@ -111,44 +111,47 @@ body {
 h1, h2, h3
 h4, h5, h6
        {
-   	 text-rendering: optimizeLegibility;
-    	 line-height: 1;
-   	 margin-top: 0;
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin-top: 0;
 }
-
 h1 {
-    font-family: 'karmatic_arcaderegular'; 
-    font-size: 4.2rem;
-    line-height: 1em;
-    letter-spacing: 10px;
+    font-size: 5rem;
+    line-height: 1.2em;
+    letter-spacing: -2px;
+    text-indent: -3px;
+    font-family: 'karmatic_arcaderegular';
+
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 1.2em;
     letter-spacing: -1px;
     text-indent: -2px;
+    font-family: 'karmatic_arcaderegular';
 }
 
 h3 {
-    font-size: 3.0rem;
+    font-size: 3.5rem;
 }
 
 h4 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 h5 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
 }
 
 h6 {
     font-size: 2rem;
 }
 
+
 a {
     color: #fff;
-    transition: color ease 1s;
+    transition: color ease 1.5s;
 }
 
 a:hover {
@@ -379,7 +382,7 @@ margin on the iframe, cause it breaks stuff. */
     display: table;
     width: 100%;
     height: 69%;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     text-align: center;
     background: #303538 no-repeat center center;
     background-size: cover;
@@ -400,7 +403,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
-    margin: 10px 0px 40px 10px;
+    margin: 10px 0 10px 0;
     font-size: 5em;
     letter-spacing: 1px;
     font-weight: bold;
@@ -409,17 +412,16 @@ margin on the iframe, cause it breaks stuff. */
 }
 .blog-title-post {
     font-size: 3em;
-    letter-spacing: 1px;
+    line-height: 2rem;
+    letter-spacing: 0;
     font-weight: bold;
-    font-family: 'karmatic_arcaderegular'; 
 }
 
 .blog-description {
-    margin: 4rem;
+    margin: 0;
     font-size: 3.8rem;
-    line-height: 2em;
+    line-height: 2rem;
     font-weight: 300;
-    font-family: 'karmatic_arcaderegular';
     letter-spacing: 1.2px;
     color: #FF00AE;
 }
@@ -431,7 +433,7 @@ margin on the iframe, cause it breaks stuff. */
     max-width: 700px;
     margin: 2rem auto;
     padding-bottom: 3em;
-    border-bottom: #33ee 1px solid;
+    border-bottom: #333 1px solid;
     word-break: break-word;
     hyphens: auto;
 }
@@ -826,18 +828,6 @@ margin on the iframe, cause it breaks stuff. */
         letter-spacing: -1px;
     }
 
-    #crazy {
-       visibility: hidden;
-       clear: both;
-       float: left;
-       margin: 10px auto 5px 20px;
-       width: 28%;
-       display: none;
-    }
-
-
-
-
     .blog-description {
         font-size: 1.7rem;
         line-height: 1.5em;
@@ -882,16 +872,6 @@ margin on the iframe, cause it breaks stuff. */
 
 @media only screen and (max-width: 500px) {
 
-#crazy {
-    visibility: hidden;
-    clear: both;
-    float: left;
-    margin: 10px auto 5px 20px;
-    width: 28%;
-    display: none;
-}
-
-
     .blog-logo img {
         max-height: 80px;
     }
@@ -923,10 +903,18 @@ margin on the iframe, cause it breaks stuff. */
         font-size: 1.5rem;
     }
 
+  #crazy {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
 
     h1, h2 {
         font-size: 4rem;
-        line-height: 5.1em;
         letter-spacing: 1px;
     }
 
