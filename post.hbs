@@ -16,7 +16,6 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -28,17 +27,20 @@
 
 
         {{! Each post has the blog logo at the top, with a link back to the home page }}
-<header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-   <div class="vertical">
-        <div id="crazy" class="site-head-content" class="inner">
-            <a id="blog-logo" href="{{@blog.url}}">
-                {{#if @blog.logo}}
-                    <img src="{{@blog.logo}}" alt="Blog Logo" />
-                {{else}}
-                    <span class="blog-title-post">{{@blog.title}}</span>
-			<br /> <br /> 
-               	    <h1 class="blog-decription"><span id="focus">{{post.title}}<focus></h1>
-		 {{/if}}
+<header class="site-head" style="background-image: url(/content/images/2013/Nov/jabbajava.jpg)">
+    <div class="vertical">
+       <a href="{{@blog.url}}">
+	<div class="site-head-content">
+            <div class="blog-title">Java The Hut</div>
+        </div>
+       </a>
+    </div>
+</header>
+<div id="crazy">
+
+ <h1 class="blog-decription">{{post.title}}</h1>
+
+</div>
             </a>
 	  </div>
 	</div>
@@ -52,7 +54,7 @@
         {{! Everything below outputs content of the the post which has been published }}
         <span class="post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{tags prefix="on " separator=" | "}}</span>
 
-        <h1>{{{title}}}</h1>
+        <p>Written by {{{author}}}</p>
 
         <section class="post-content">
             {{content}}
@@ -61,7 +63,7 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'INSERT DISQUS SHORTNAME'; // required: replace example with your forum shortname
+        var disqus_shortname = 'INSERT SHORT NAME HERE'; // required: replace example with your forum shortname
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {

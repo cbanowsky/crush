@@ -96,27 +96,10 @@ body {
 }
 
 
-
-#focus {
-  -webkit-text-fill-color: pink;
-  text-transform: uppercase;
-}
-@-webkit-keyframes focus {
-  from {
-    background-position: 0px 0, 0px 0, 0px 0,  0 0;
-  }
-
-  to {
-    background-position: 23.7px 0, 23.7px 0, 23.7px 0, 23.7px 0;
-  }
-}
-
-
-
 ::-moz-selection {
     color: #91F453;
     background: #91F453;
-    text-shadow: 0;
+    text-shadow: none;
 }
 
 ::selection {
@@ -135,7 +118,7 @@ h4, h5, h6
 
 h1 {
     font-family: 'karmatic_arcaderegular'; 
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     line-height: 1em;
     letter-spacing: 10px;
 }
@@ -171,15 +154,16 @@ a {
 a:hover {
     color: #FF00AE;
 }
+
 #crazy {
-    height: 23.7%;
+    height: 20%;
     max-height: 100%;
     background: linear-gradient(130deg, #299838 94%, transparent 54%);
     background-size: 8px 9px;
     background-color: #111;
     -webkit-animation: focus 2s linear infinite;
-    text-align: left;
-    margin-top: 33%;
+    text-align: center;
+    margin-top: 0px;
 }
 
 h1 a, h2 a, h3 a,
@@ -424,7 +408,7 @@ margin on the iframe, cause it breaks stuff. */
     color: #82F449;
 }
 .blog-title-post {
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: 1px;
     font-weight: bold;
     font-family: 'karmatic_arcaderegular'; 
