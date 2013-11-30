@@ -1,6 +1,8 @@
--## Install 
+## Install 
 
 `git clone https://github.com/PoopBaron/ghost-hut /path/to/Ghost/content/themes/ghost-hut`
+
+
 
 ## Setting up Analytics
 
@@ -14,6 +16,9 @@ if your blog is still in development then `npm install` should be all you need.
 
 I am still working on adding some more features/cleaning up the stylesheets...initial commit is for those who don't mind making their own modifications.
 
+##
+
+I have fixed many of the responsive issues.  If any other issues arise please let me know and I will fix it.
 
 enjoy.
  
