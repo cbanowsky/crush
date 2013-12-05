@@ -534,6 +534,19 @@ margin on the iframe, cause it breaks stuff. */
     line-height: 1.5em;
 }
 
+
+/* add container for displaying ads without it looking sketch. */
+
+.ads {
+    position: relative;
+    width:80%;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding-bottom: 3em;
+    border-bottom: none;
+    word-break: break-word;
+}
+
 /* ==========================================================================
    5. Single Post - When you click on an individual post
    ========================================================================== */
