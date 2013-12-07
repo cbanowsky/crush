@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
     <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -33,7 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script type="text/javascript">
 var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-XXXXXXX-X']);
+_gaq.push(['_setAccount', 'UA-45937736-1']);
 _gaq.push(['_trackPageview']);
 (function() {
 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -41,17 +42,17 @@ ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'st
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
-
+<script>$.scrollTo(...);</script>	
     {{! Everything else gets inserted here }}
     {{{body}}}
 
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
-
     {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="/assets/js/scrollTo.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
-
+    
 </body>
 </html>
