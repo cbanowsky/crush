@@ -23,8 +23,8 @@
    ========================================================================== */
 
 @import url(normalize.css);
-@import url(stylesheet.css);
-
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
 /* ==========================================================================
    1. Icons - Sets up the icon font and respective classes
    ========================================================================== */
@@ -42,11 +42,7 @@
 }
 
 /* Apply these base styles to all icons */
-.icon-ghost:before, 
-.icon-feed:before, 
-.icon-twitter:before, 
-.icon-google-plus:before, 
-.icon-facebook:before {
+.icon-ghost, .icon-feed, .icon-twitter, .icon-google-plus, .icon-facebook {
     font-family: 'icons';
     speak: none;
     font-style: normal;
@@ -57,6 +53,7 @@
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
 }
+
 /* Each icon is created by inserting the corret character into the 
    content of the :before pseudo element. Like a boss. */
 .icon-ghost:before {
@@ -80,53 +77,48 @@
 /* ==========================================================================
    2. General - Setting up some base styles
    ========================================================================== */
+
 html {
     height: 100%;
     max-height: 100%;
     font-size: 62.5%;
-    background-image:url(data:image/png;base64,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); 
-    zoom: 1; 
-    background-position: initial initial; 
-    background-repeat: initial initial;
 }
 
 body {
     height: 100%;
     max-height: 100%;
-    font-family: 'pakowskyregular';
-    font-size: 2.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
     line-height: 1.6em;
-    color: #92B1D1;
-    z-index: -1;
+    color: #3A4145;
 }
 
-
 ::-moz-selection {
-    color: #91F453;
-    background: #91F453;
+    color: #222;
+    background: #D6EDFF;
     text-shadow: none;
 }
 
 ::selection {
-    color: #ffee;
-    background: #333;
+    background: rgba(244,170,105,0.2);
     text-shadow: none;
 }
-, 
-h1, h2, h3
-h4, h5, h6
-       {
+
+h1, h2, h3,
+h4, h5, h6 {
     text-rendering: optimizeLegibility;
     line-height: 1;
     margin-top: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
+
 h1 {
     font-size: 5rem;
     line-height: 1.2em;
     letter-spacing: -2px;
     text-indent: -3px;
-    font-family: 'karmatic_arcaderegular';
-
 }
 
 h2 {
@@ -134,7 +126,6 @@ h2 {
     line-height: 1.2em;
     letter-spacing: -1px;
     text-indent: -2px;
-    font-family: 'karmatic_arcaderegular';
 }
 
 h3 {
@@ -153,80 +144,70 @@ h6 {
     font-size: 2rem;
 }
 
-
 a {
-    color: #fff;
-    transition: color ease 1.5s;
+    color: #4a4a4a;
+    transition: color ease 0.3s;
 }
 
 a:hover {
-    color: #FF00AE;
-}
-
-a.btn {
-    
-    text-decoration: none;
-    background-color: #9fd067;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    color: white;
-    display: inline-block;
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin: 0;
-    overflow: visible;
-    padding: 10px 20px 10px 20px;
-    position: relative;
-    margin-top: 2rem;
-    cursor: pointer;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: lighter;
-
-}
-#header-arrow {
-    font-size: 140px;
-    margin: -10px auto;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: -120px;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-}
-#header-arrow:hover {
-    opacity: 0.9;
-}
-#crazy {
-    height: 40%;
-    max-height: 100%;
-    background: linear-gradient(130deg, #299838 94%, transparent 54%);
-    background-size: 8px 9px;
-    background-color: #111;
-    -webkit-animation: focus 2s linear infinite;
-    text-align: center;
-    margin-top: -30px;
+    color: #659DBF;
 }
 
 h1 a, h2 a, h3 a,
 h4 a, h5 a, h6 a {
-    color: #82F449;
-}
-a.btn:hover {
-    background: #86c440;
+    color: #50585D;
 }
 
-p, ul, ol, dl {
+
+p, ul, ol {
     margin: 1.6em 0;
 }
 
 ol ol, ul ul,
 ul ol, ol ul {
     margin: 0.4em 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #efefef;
+    margin: 3.2em 0;
+    padding: 0;
+}
+
+blockquote {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1.6em 0 1.6em -2.2em;
+    padding: 0 0 0 1.6em;
+    border-left: #BF3636 0.4em solid;
+}
+
+blockquote p {
+    margin: 0.8em 0;
+    font-style: italic;
+}
+
+blockquote small {
+    display: inline-block;
+    margin: 0.8em 0 0.8em 1.5em;;
+    font-size:0.9em;
+    color: #ccc;
+}
+
+blockquote small:before { content: '\2014 \00A0'; }
+
+blockquote cite {
+    font-weight:bold;
+}
+
+blockquote cite a { font-weight: normal; }
+
+
+dl {
+    margin: 1.6em 0;
 }
 
 dl dt {
@@ -246,43 +227,6 @@ dl dd {
     margin-bottom: 1em
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #efefef;
-    margin: 3.2em 0;
-    padding: 0;
-}
-
-blockquote {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 1.6em 0 1.6em -2.2em;
-    padding: 0 0 0 1.6em;
-    border-left: #4a4a4a 0.4em solid;
-}
-
-blockquote p {
-    margin: 0.7em 0;
-    font-style: italic;
-}
-
-blockquote small {
-    display: inline-block;
-    margin: 0.8em 0 0.8em 1.5em;
-    font-size:0.8em;
-    color: #ccc;
-}
-
-blockquote small:before { content: '\2014 \00A0'; }
-
-blockquote cite {
-    font-weight:bold;
-}
-
-blockquote cite a { font-weight: normal; }
-
 mark {
     background-color: #ffc336;
 }
@@ -291,34 +235,11 @@ code, tt {
     padding: 1px 3px;
     font-family: Inconsolata, monospace, sans-serif;
     font-size: 0.85em;
-    white-space: pre-wrap;
-    border: 1px solid #E3EDF3;
-    background: #F7FAFB;
-    border-radius: 2px;
-}
-
-pre {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 1.6em 0;
-    border: 1px solid #E3EDF3;
-    width: 100%;
-    padding: 10px;
-    font-family: Inconsolata, monospace, sans-serif;
-    font-size: 0.9em;
     white-space: pre;
-    overflow: auto;
-    background: #F7FAFB;
+    border: 1px solid #222;
+    background: #23241f;
+    color: #e6db74;
     border-radius: 3px;
-}
-
-pre code, tt {
-    font-size: inherit;
-    white-space: -moz-pre-wrap;
-    white-space: pre-wrap;
-    background: transparent;
-    border: none;
-    padding: 0;
 }
 
 kbd {
@@ -375,22 +296,16 @@ table tbody > tr:nth-child(odd) > th {
     background-color: #f6f6f6;
 }
 
-table.plain tbody > tr:nth-child(odd) > td,
-table.plain tbody > tr:nth-child(odd) > th {
-   background: transparent;
+table.plain {
+    tbody > tr:nth-child(odd) > td,
+    tbody > tr:nth-child(odd) > th {
+        background: transparent;
+    }
 }
 
-iframe, .fluid-width-video-wrapper {
-    display: block;
-    margin: 1.6em 0;
+strong {
+   font-weight: 400;
 }
-
-/* When a video is inside the fitvids wrapper, drop the
-margin on the iframe, cause it breaks stuff. */
-.fluid-width-video-wrapper iframe {
-    margin: 0;
-}
-
 
 /* ==========================================================================
    3. Utilities - These things get used a lot
@@ -422,104 +337,146 @@ margin on the iframe, cause it breaks stuff. */
    4. General - The main styles for the the theme
    ========================================================================== */
 
-/* Big cover image on the home page */ 
-.site-head {
+/* Big cover image on the home page */
+#site-head {
     position: relative;
     display: table;
     width: 100%;
     height: 100%;
-    margin-bottom: 0rem;
+    margin-bottom: 5rem;
     text-align: center;
+    color: #fff;
+    background: #303538 no-repeat center center;
     background-size: cover;
-}
-
-#site-head:after {
-
-}
-
-.blog-logo {
-    text-decoration: none;
+    border-bottom: 1px solid #aaa;
+    background-position: center center;
+    -moz-box-shadow: 0 35px 55px 10px rgba(35,25,25,0.05),0 8px 10px 6px 
+rgba(75,50,50,0.1);
+    -webkit-box-shadow: 0 35px 55px 10px rgba(35,25,25,0.05),0 8px 10px 
+6px rgba(75,50,50,0.1);
+    box-shadow: 0 35px 55px 10px rgba(35,25,25,0.05),0 8px 10px 6px 
+rgba(75,50,50,0.1);
+    text-shadow:0 0 5px rgba(0,0,0,0.5);
 }
 
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
-.blog-logo img {
+#blog-logo img {
     display: block;
     max-height: 100px;
     width: auto;
     margin: 0 auto;
     line-height: 0;
+    border-radius: 0%;
+		overflow: hidden;
+		border: 1.5px solid #fff;
+		background: #fff;
+		-moz-transition: all 0.5s ease;
+
+		/* WebKit */
+
+		-webkit-transition: all 0.3s ease;
+
+		/* Opera */
+
+		-o-transition: all 0.3s ease;
+
+		/*Standar*/
+		transition: all 0.3s ease;
+
+}
+
+#blog-logo img:hover{
+	opacity: 1;
+	/* Firefox */
+	-moz-transform: scale(1.2) rotate(360deg);
+	/* WebKit */
+	-webkit-transform: scale(1.2) rotate(360deg);
+	/* Opera */
+	-o-transform: scale(1.2) rotate(360deg);
+	/* Standard */
+	transform: scale(1.2) rotate(360deg);
+}
+
+
+#back {
+    color: rgba(0,0,0,0.2);
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    padding: 6px;
+    font-size: 16px;
 }
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
     margin: 10px 0 10px 0;
-    font-size: 5em;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-family: 'karmatic_arcaderegular';
-    color: #82F449;
-}
-.blog-title-post {
-    font-size: 3em;
-    line-height: 2rem;
-    letter-spacing: 0;
-    font-weight: bold;
+    font-size: 5rem;
+    letter-spacing: -1px;
+    font-weight: 400;
 }
 
 .blog-description {
     margin: 0;
-    font-size: 3.8rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.5em;
     font-weight: 300;
-    letter-spacing: 1.2px;
-    color: #FF00AE;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width:85%;
+    width:80%;
     max-width: 700px;
-    margin: 2rem auto;
-    padding-bottom: 3em;
-    border-bottom: #333 1px solid;
+    margin: 4rem auto;
+    padding-bottom: 4rem;
+    border-bottom: rgba(88,84,72,0.3) 1px solid;
     word-break: break-word;
     hyphens: auto;
 }
 
-
-  
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
 .post:after {
     display: block;
     content: "";
-    width: 14px;
-    height: 14px;
-    border: #82F449 5px solid;
+    width: 7px;
+    height: 7px;
+    border: rgba(88,84,72,0.3) 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #544CB1;
+    background: #fff;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    box-shadow: #fff 0 0 2px 5px;
+    box-shadow: #fff 0 0 0 5px;
 }
 
 .post-title {
     margin:0;
+    text-align: center;
 }
 
 .post-title a {
     text-decoration: none;
 }
 
+.post-image {
+    text-align: center;
+}
+
+.post-image img{
+    max-width: 100%;
+}
+
 .post-excerpt p {
     margin: 1.6rem 0 0 0;
     font-size: 0.9em;
     line-height: 1.6em;
+    text-align: justify;
 }
 
 .post-meta {
@@ -527,7 +484,9 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0 0 5px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
-    color: #91F453;
+    color: #F2622E;
+    text-align: center;
+    width:100%;
 }
 
 .post-meta a {
@@ -554,7 +513,6 @@ margin on the iframe, cause it breaks stuff. */
 .user-name {
     display: block;
     font-weight: bold;
-    font-family: 'paskowyregular';
 }
 
 .user-bio {
@@ -583,21 +541,6 @@ margin on the iframe, cause it breaks stuff. */
     line-height: 1.5em;
 }
 
-
-
-/* add container for displaying ads without it looking sketch. */
-
-.ads {
-    position: relative;
-    width:80%;
-    max-width: 700px;
-    margin: 2rem auto;
-    padding-bottom: 3em;
-    border-bottom: none;
-    word-break: break-word;
-}
-
-
 /* ==========================================================================
    5. Single Post - When you click on an individual post
    ========================================================================== */
@@ -614,17 +557,16 @@ margin on the iframe, cause it breaks stuff. */
     display: none;
 }
 
-/* Insert some mad padding up in the header for better spacing */
-.post-template .post-header {
-    padding: 50px 0;
+.post-header {
     text-align: center;
 }
+/* Insert some mad padding up in the header for better spacing */
+.post-template .post-header {
+    padding: 60px 0;
+}
 
-.post-template .blog-title {
-    display: inline-block;
-    padding: 4.5rem 0;
-    font-family: 'karmatic_arcaderegular';
-    font-size: 1em;
+.post-content {
+    text-align: justify;
 }
 
 /* Keep large images within the bounds of the post-width */
@@ -632,13 +574,12 @@ margin on the iframe, cause it breaks stuff. */
     display: block;
     max-width: 100%;
     margin: 0 auto;
-    height: auto;
 }
 
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 4rem 0 0 0;
+    margin: 4rem 0 2rem 0;
     padding: 4rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
@@ -646,6 +587,10 @@ margin on the iframe, cause it breaks stuff. */
 .post-footer h4 {
     font-size: 1.8rem;
     margin: 0;
+    font-weight: 400;
+}
+.post-footer h4 a {
+	  text-decoration: none;
 }
 
 .post-footer p {
@@ -657,8 +602,17 @@ margin on the iframe, cause it breaks stuff. */
 /* Create some space to the right for the share links */
 .post-footer .author {
     margin-right: 180px;
+    text-align: justify;
 }
+.post-footer .author .author-pic {
+	background-size: cover;
+	border-radius: 100%;
+	margin: 0 10px 5px 0;
+	float: left;
+	width: 100px;
+	height: 100px;
 
+}
 /* Drop the share links in the space to the right.
    Doing it like this means it's easier for the author bio
    to be flexible at smaller screen sizes while the share
@@ -675,12 +629,12 @@ margin on the iframe, cause it breaks stuff. */
     display: inline-block;
     margin: 1.4rem 1.6rem 1.6rem 0;
     color: #BBC7CC;
-    text-decoration: none;
 }
 
 .post-footer .share a:hover {
     color: #50585D;
 }
+
 
 /* ==========================================================================
    6. Third Party Elements - Embeds from other services
@@ -697,7 +651,7 @@ margin on the iframe, cause it breaks stuff. */
     min-width: 25px;
     font-size: 1.1rem;
 }
-.
+
 
 /* ==========================================================================
    7. Pagination - Tools to let you flick between pages
@@ -705,18 +659,18 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The main wrapper for our pagination links */
 .pagination {
-    position: inline-block;
+    position: relative;
     width: 80%;
     max-width: 700px;
     margin: 4rem auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: #BF3636;
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+    color: #585448;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -725,7 +679,7 @@ margin on the iframe, cause it breaks stuff. */
     position: absolute;
     display: inline-block;
     padding: 0 15px;
-    border: #EBF2F6 2px solid;
+    border: rgba(244,170,105,0.3) 2px solid;
     text-decoration: none;
     border-radius: 30px;
     transition: border ease 0.3s;
@@ -746,7 +700,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .older-posts:hover,
 .newer-posts:hover {
-    border-color: #9EABB3;
+    border-color: #F4AA69;
 }
 
 
@@ -754,19 +708,42 @@ margin on the iframe, cause it breaks stuff. */
    8. Footer - The bottom of every page
    ========================================================================== */
 
-
 .site-footer {
-    position: relative;
-    margin: 8rem 0 0 0;
-    padding: 4rem 0;
-    border-top: #EBF2F6 1px solid;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
-    line-height: 1.7em;
-    color: #BBC7CC;
-    text-align: center;
-    background: #F7FAFB;
+	position: relative;
+	margin: 8rem 0 0 0;
+	padding: 4rem 0;
+	border-top: #BF3636 1px solid;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
+	line-height: 1.7em;
+	color: #0C0D0C;
+	text-align: center;
+	background: #f1f1f1;
 }
+
+.site-footer a {
+	color: #BF3636;
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #585448;
+}
+
+.poweredby .icon-ghost {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.poweredby .icon-ghost:hover {
+    text-decoration: none;
+}
+
+.poweredby .icon-ghost:before {
+    font-size: 1rem;
+    margin-right: 0.2em;
+}
+
 /* The subscribe icon on the footer */
 .subscribe {
     width: 28px;
@@ -775,7 +752,7 @@ margin on the iframe, cause it breaks stuff. */
     top: -14px;
     left: 50%;
     margin-left: -15px;
-    border: #EBF2F6 1px solid;
+    border: #BF3636 1px solid;
     text-align: center;
     line-height: 2.4rem;
     border-radius: 50px;
@@ -785,10 +762,10 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The RSS icon, inserted via icon font */
 .subscribe:before {
-    color: #D2DEE3;
+    color: #BF3636;
     font-size: 10px;
     position: absolute;
-    top: 9px;
+    top: 2px;
     left: 9px;
     font-weight: bold;
     transition: color 0.5s ease;
@@ -811,9 +788,10 @@ margin on the iframe, cause it breaks stuff. */
     padding: 4px 8px 5px 8px;
     position:absolute;
     top: -23px;
-    left: -21px;
+    left: -23px;
     color: rgba(255,255,255,0.9);
     font-size: 1.1rem;
+    font-weight: bold;
     line-height: 1em;
     text-align: center;
     background: #50585D;
@@ -843,7 +821,11 @@ margin on the iframe, cause it breaks stuff. */
     top: -33px;
 }
 
-
+/* Instagram Badge */
+.instagram {
+   position: relative;
+   padding: 4px 4px 4px 4px;    
+}
 
 /* ==========================================================================
    9. Media Queries - Smaller than 900px
@@ -855,7 +837,7 @@ margin on the iframe, cause it breaks stuff. */
         margin-left: 0;
     }
 
-    .site-head {
+    #site-head {
         -webkit-box-sizing: border-box; 
         -moz-box-sizing: border-box;
         box-sizing: border-box; 
@@ -913,7 +895,7 @@ margin on the iframe, cause it breaks stuff. */
 
 @media only screen and (max-width: 500px) {
 
-    .blog-logo img {
+    #blog-logo img {
         max-height: 80px;
     }
 
@@ -932,7 +914,7 @@ margin on the iframe, cause it breaks stuff. */
         line-height: 1.6em;
     }
 
-    .site-head {
+    #site-head {
         padding: 10% 0;
     }
 
@@ -944,27 +926,19 @@ margin on the iframe, cause it breaks stuff. */
         font-size: 1.5rem;
     }
 
-  #crazy {
-    visibility: hidden;
-    clear: both;
-    float: left;
-    margin: 10px auto 5px 20px;
-    width: 28%;
-    display: none;
-  }
-}
 
     h1, h2 {
-        font-size: 4rem;
-        letter-spacing: 1px;
+        font-size: 3rem;
+        line-height: 1.1em;
+        letter-spacing: -1px;
     }
 
     h3 {
-        font-size: 3.8rem;
+        font-size: 2.8rem;
     }
 
     h4 {
-        font-size: 3.3rem;
+        font-size: 2.3rem;
     }
 
     .post-template .post {
@@ -980,7 +954,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .post-footer {
-        padding: rem 0;
+        padding: 4rem 0;
         text-align: center;
     }
 
@@ -996,7 +970,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .post-footer .share a {
-        margin: 1rem 0.8rem 0 0.8rem;
+        margin: 1.4rem 0.8rem 0 0.8rem;
     }
 
     .older-posts,
@@ -1009,9 +983,27 @@ margin on the iframe, cause it breaks stuff. */
         display: block;
     }
 
+    .site-footer {
+        margin-top: 6rem;
+        font-size: 1.1rem;
+    }
+
 }
 
 /* ==========================================================================
    End of file. Media queries should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */

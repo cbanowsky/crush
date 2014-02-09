@@ -1,24 +1,16 @@
-## Install 
+# Tepid
 
-`git clone https://github.com/PoopBaron/ghost-hut /path/to/Ghost/content/themes/ghost-hut`
+Tepid is a lightweight typography theme, with many colors in orange tone. It's a Casper (default Ghost theme) fork, so if you like Ghost there's a big chance that you will love Tepid. It's a [Ghost](http://ghost.org) theme created for my [Blog](http://wcsantos.com).
 
+I not going to use versions for this project, so maybe if you really wanna see the status of the theme, you can visit my [blog](http://wcsantos.com) and look around.
 
+## Copyright & License
 
-## Setting up Analytics
+Copyright (C) 2013 Ghost Foundation - Released under the MIT License.
 
-Assuming you did everything right on the Google-end of things, just enter your tracking id i.e.  `UA-XX...` into the Analytics javascript located in `default.hbs`   
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-To get disqus working just insert your disqus shortname into the disqus script located in `post.hbs`.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-after that run `grunt` 
-change to Ghost root direcotry
-if your blog is still in development then `npm install` should be all you need.
-
-I am still working on adding some more features/cleaning up the stylesheets...initial commit is for those who don't mind making their own modifications.
-
-##
-
-I have fixed many of the responsive issues.  If any other issues arise please let me know and I will fix it.
-
-enjoy.
- 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
