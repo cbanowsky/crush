@@ -25,6 +25,7 @@
 @import url(normalize.css);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(../fonts/customFonts/stylesheet.css);
 /* ==========================================================================
    1. Icons - Sets up the icon font and respective classes
    ========================================================================== */
@@ -87,7 +88,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'bebas_neueregular', sans-serif;
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 1.6em;
@@ -110,7 +111,7 @@ h4, h5, h6 {
     text-rendering: optimizeLegibility;
     line-height: 1;
     margin-top: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'franchiseregular', sans-serif;
     font-weight: 300;
 }
 
@@ -388,13 +389,13 @@ rgba(75,50,50,0.1);
 #blog-logo img:hover{
 	opacity: 1;
 	/* Firefox */
-	-moz-transform: scale(1.2) rotate(360deg);
+	-moz-transform: scale(3);
 	/* WebKit */
-	-webkit-transform: scale(1.2) rotate(360deg);
+	-webkit-transform: scale(3);
 	/* Opera */
-	-o-transform: scale(1.2) rotate(360deg);
+	-o-transform: scale(3); 
 	/* Standard */
-	transform: scale(1.2) rotate(360deg);
+	transform: scale(3);
 }
 
 
@@ -410,17 +411,18 @@ rgba(75,50,50,0.1);
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
     margin: 10px 0 10px 0;
-    font-size: 5rem;
-    letter-spacing: -1px;
-    font-weight: 400;
+    font-family: 'revolutionrevolution', sans-serif;
+    font-size: 5.5rem;
+    letter-spacing: 1px;
+    font-weight: 525;
 }
 
 .blog-description {
     margin: 0;
-    font-size: 1.8rem;
-    line-height: 1.5em;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 2em;
+    font-weight: 400;
+    font-family: 'basic_title_fontregular', sans-serif;
     letter-spacing: 0;
 }
 
