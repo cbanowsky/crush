@@ -1,10 +1,14 @@
-# Tepid
+# Ghost-Hut
 
-Tepid is a lightweight typography theme, with many colors in orange tone. It's a Casper (default Ghost theme) fork, so if you like Ghost there's a big chance that you will love Tepid. It's a [Ghost](http://ghost.org) theme created for my [Blog](http://wcsantos.com).
+## Ghost-Hut Theme 
 
-I not going to use versions for this project, so maybe if you really wanna see the status of the theme, you can visit my [blog](http://wcsantos.com) and look around.
+Ghost-Hut is a fork of [Tepid](https://github.com/wcs/tepid).  Some elements will need to be changed if you plan to utilize the built in AdSense spots (located in posts.hbs).  
 
-## Copyright & License
+Located in default.hbs (in the footer section) make sure to change the url to my instagram so that the badge points to your page.
+
+
+
+# Copyright & License
 
 Copyright (C) 2013 Ghost Foundation - Released under the MIT License.
 
@@ -12,5 +16,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
