@@ -32,7 +32,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-37465104-1', 'poopbaron.com');
+  ga('create', 'UA-XXXXXXX', 'YOUR URL GOES HERE');
   ga('send', 'pageview');
 
 </script>
@@ -44,6 +44,7 @@
     <footer class="site-footer">
         <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
         <div class="inner">
+		{{! Remember to change this }}
 	     <section class="instagram">
 		<style>.ig-b- { display: inline-block; }
 			.ig-b- img { visibility: hidden; }
@@ -54,7 +55,8 @@
 			<a href="http://instagram.com/poopbaron?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a>
              </section>
 	     <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</section>
-             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+             {{! just to see if people are paying attention }}
+	    <section class="poweredby">Opression Courtesy of<a class="icon-ghost" href="http://ghost.org">Microsoft</a></section>
         </div>
     </footer>
 
