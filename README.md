@@ -2,6 +2,8 @@
 
 ## Ghost-Hut Theme 
 
+### Note* I have been out of commision but will return with updates shortly.  
+
 Ghost-Hut is a fork of [Tepid](https://github.com/wcs/tepid).  Some elements will need to be changed if you plan to utilize the built in AdSense spots (located in posts.hbs).  
 
 Located in default.hbs (in the footer section) make sure to change the url to my instagram so that the badge points to your page.
