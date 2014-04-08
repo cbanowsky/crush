@@ -389,13 +389,13 @@ rgba(75,50,50,0.1);
 #blog-logo img:hover{
 	opacity: 1;
 	/* Firefox */
-	-moz-transform: scale(3);
+	-moz-transform: scale(1.8);
 	/* WebKit */
-	-webkit-transform: scale(3);
+	-webkit-transform: scale(1.8);
 	/* Opera */
-	-o-transform: scale(3); 
+	-o-transform: scale(1.8); 
 	/* Standard */
-	transform: scale(3);
+	transform: scale(1.8);
 }
 
 
