@@ -2,7 +2,8 @@
 
 ## Ghost-Hut Theme 
 
-### Note* I have been out of commision but will return with updates shortly.  
+### Fork this repo to make changes.  Suggestions always welcome.
+
 
 Ghost-Hut is a fork of [Tepid](https://github.com/wcs/tepid).  Some elements will need to be changed if you plan to utilize the built in AdSense spots (located in posts.hbs).  
 
