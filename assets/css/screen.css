@@ -24,6 +24,27 @@
    0. Normalize.css v2.1.3 | MIT License | git.io/normalize | (minified)
    ========================================================================== */
 
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700,900,200);
+.load {position: fixed; background: #FFF; width: 100%; height: 100%; left:0; top:0; z-index: 6050;}
+.loader{position: fixed;z-index: 3;margin: 0 auto;left: 0;right: 0;top: 50%;margin-top: -30px;width: 90px;height: 60px;list-style: none;}
+@-webkit-keyframes loadbars {
+        0%{height: 10px;margin-top: 25px;}
+        50%{height:50px;margin-top: 0px;}
+        100%{height: 10px;margin-top: 25px;}
+}
+@-moz-keyframes loadbars {
+        0%{height: 10px;margin-top: 25px;}
+        50%{height:50px;margin-top: 0px;}
+        100%{height: 10px;margin-top: 25px;}
+}
+@keyframes loadbars {
+        0%{height: 10px;margin-top: 25px;}
+        50%{height:50px;margin-top: 0px;}
+        100%{height: 10px;margin-top: 25px;}
+}
+
+
 article, aside, details,
 figcaption, figure,
 footer, header, hgroup,
@@ -33,7 +54,7 @@ audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
 [hidden], template { display: none; }
 html {
-   font-family: sans-serif;
+   font-family: 'Titillium Web' sans-serif;
    -ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
 }
@@ -52,7 +73,7 @@ hr {
 }
 mark { background: #FF0; color: #000; }
 code, kbd, pre,
-samp { font-family: monospace, serif; font-size: 1em; }
+samp { font-family: 'Ubuntu Mono', monospace, serif; font-size: 1em; }
 pre { white-space: pre-wrap; }
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 small { font-size: 80%; }
@@ -117,7 +138,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+    font-family: "casper-icons", "Tillium Web", sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -176,7 +197,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: "Titillium Web", sans-serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -202,7 +223,7 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Titillium Web", sans-serif;
 }
 
 h1 {
@@ -493,7 +514,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
@@ -665,7 +686,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     color: #fff;
 }
 
@@ -674,7 +695,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-family: "Ubuntu Mono", serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -765,7 +786,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -1209,7 +1230,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1296,7 +1317,7 @@ body:not(.post-template) .post-title {
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
     border-top: #EBF2F6 1px solid;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Tillium Web", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
