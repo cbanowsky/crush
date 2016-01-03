@@ -1735,10 +1735,6 @@ body:not(.post-template) .post-title {
       width: inherit;
       height: auto;
     }
-    .loop-img img {
-      width: 100%;
-      height: auto;
-    }
 }
 
 
