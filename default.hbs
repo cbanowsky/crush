@@ -29,24 +29,27 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-51309187-1', 'auto');
+  // INSERT YOUR ANALYTICS CODE WHERE UA-XXXXXXXX-X IS NOW
+  ga('create', 'UA-XXXXXXXX-X', 'auto');
   ga('send', 'pageview');
 
 </script>
 <!-- Facebook Pixel Code -->
 <script>
+// DELETE THIS WHOLE SCRIPT TAG IF YOU DO NOT PLAN ON USING FACEBOOK PIXELS
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','//connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '985686538140502');
+fbq('init', 'INSERT YOUR PIXEL ID HERE');
 fbq('track', "PageView");</script>
-<noscript><img height="1" width="1" style="display:none"
+<noscript>
+<img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=985686538140502&ev=PageView&noscript=1"
-/></noscript>
+/> <!-- CHANGE THE PREVIOUS URL TO THE URL PROVIDED BY FACEBOOK -->
+</noscript>
 <!-- End Facebook Pixel Code -->
 
     {{! Everything else gets inserted here }}
