@@ -1732,7 +1732,8 @@ body:not(.post-template) .post-title {
     }
     /* Additional CSS */
     .loop-img {
-      width: inherit;
+      display: block;
+      width: auto;
       height: auto;
     }
 }
