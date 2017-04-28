@@ -8,12 +8,9 @@
 <article class="{{post_class}}">
     <header class="post-header">
         <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
-      {{#if image != null}}
-        {{image}}
-        {{#else }}
-        <h3></h3>
     </header>
     <section class="post-excerpt">
+      <a href="{{url}}"><img src="{{image}}" width="100%"/></a>
         <p>{{excerpt words="35"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
     </section>
     <footer class="post-meta">
