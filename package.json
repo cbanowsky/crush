@@ -1,0 +1,37 @@
+{
+    "name": "crush v2",
+    "description": "The modded blog theme for Ghost",
+    "demo": "https://blog.hack.cd",
+    "version": "1.5.0",
+    "engines": {
+        "ghost": ">=0.9.0 <1.0.0"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.jpg"
+    },
+    "author": {
+        "name": "Cameron Banowsky",
+        "email": "cameron@hack.cd",
+        "url": "https://blog.hack.cd"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Personal Blogs"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "blog"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cbanowsky/crush"
+    },
+    "bugs": "https://github.com/cbanowsky/crush/issues",
+    "contributors": "https://github.com/cbanowsky/crush/graphs/contributors"
+}
